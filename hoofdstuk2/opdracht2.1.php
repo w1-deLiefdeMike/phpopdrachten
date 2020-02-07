@@ -10,7 +10,7 @@
 <html lang="nl">
     <head>
         <title>
-            PHP Template
+            Opdracht 2.1
         </title>
         <meta name="description" content="Mijn eerste poging in php">
         <meta name="keywords" content="plz, help, me">
