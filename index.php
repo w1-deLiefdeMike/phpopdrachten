@@ -13,7 +13,7 @@
         </title>
         <meta name="description" content="Mijn eerste poging in php">
         <meta name="keywords" content="plz, help, me">
-        <meta charset="utf-8"> type="text/css" rel="stylesheet">
+        <meta charset="utf-8">
         <link href="CSS/style.css" type="text/css" rel="stylesheet">
     </head>
     <body>
