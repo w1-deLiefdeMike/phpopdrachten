@@ -7,6 +7,7 @@
  */
 ?>
 <?php
+// De logica van de variabelen lijken niet helemaal te kloppen, maar volgens mij heb ik er een half-degelijk verhaal van gemaakt.
     $text1 = "Hallo";
     $text2 = "een makkelijke taal";
     $text3 = "toch zo'n makkelijke taal";
