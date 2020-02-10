@@ -7,6 +7,7 @@
  */
 ?>
 <?php
+// Aanmaken van de variabelen.
     $text1 = "Elfstedentocht";
     $text2 = "Alvestêdetocht";
     $text3 = 200;
