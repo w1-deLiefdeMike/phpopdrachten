@@ -40,6 +40,14 @@
 </header>
 <p>
 </p>
+<aside>
+    <h2>Menu</h2>
+    <ul>
+        <li>
+            <a href="../index.php">Home</a>
+        </li>
+    </ul>
+</aside>
 <main id="wrapper">
     <h2>Uitwerkingen</h2>
 </main>
