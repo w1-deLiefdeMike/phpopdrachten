@@ -27,7 +27,7 @@
     <h1><?php echo "Uitwerking van PHP-opdrachten"; ?></h1>
 </header>
 <?php
-    if ($driveOn == true && $trafficLightColor == "Groen" && $ambulanceComing == false)
+ /**   if ($driveOn == true && $trafficLightColor == "Groen" && $ambulanceComing == false)
     {
         $result = "U mag doorrijden";
     }
@@ -50,6 +50,24 @@
     else
     {
         $result = "Als je dit ziet, dan dacht je Mike dat ie het begreep maar heeftt ie toch een foutje in zijn if/else statement/logica gemaakt";
+    }
+  */
+    if ($trafficLightColor == "Groen" && $ambulanceComing == false)
+    {
+        $driveOn = true;
+    }
+    else
+    {
+        $driveOn = false;
+    }
+
+    if ($driveOn == true)
+    {
+        $result = "U mag doorrijden";
+    }
+    else
+    {
+        $result = "U moet stoppen";
     }
 ?>
 <p><?php echo $result ?></p>
