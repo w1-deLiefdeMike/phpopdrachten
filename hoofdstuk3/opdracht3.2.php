@@ -70,7 +70,11 @@
         $result = "U moet stoppen";
     }
 ?>
+<h2>Deel 1</h2>
 <p><?php echo $result ?></p>
+<br>
+                        Hier ben je gebleven
+<h2>Deel 2</h2>
 <aside>
     <h2>Menu</h2>
     <ul>
