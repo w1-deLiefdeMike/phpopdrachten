@@ -26,6 +26,7 @@
 <header>
     <h1><?php echo "Uitwerking van PHP-opdrachten"; ?></h1>
 </header>
+<h2>Deel 1</h2>
 <?php
  /**   if ($driveOn == true && $trafficLightColor == "Groen" && $ambulanceComing == false)
     {
@@ -70,11 +71,48 @@
         $result = "U moet stoppen";
     }
 ?>
-<h2>Deel 1</h2>
 <p><?php echo $result ?></p>
 <br>
-                        Hier ben je gebleven
 <h2>Deel 2</h2>
+<?php
+    $boozePlz = "";
+    $countryName = "";
+    $currentAge = 29;
+
+    if($currentAge < 20)
+    {
+        $boozePlz = "Je mag hier alle drankjes consumeren";
+    }
+    else if($currentAge >= 20 && $currentAge <= 17)
+    {
+        if ($currentAge <= 18 && $countryName == ("België" || "Bulgarije" || "Nederland"))
+        {
+            $boozePlz = "Je woont in $countryName en bent $currentAge. Je mag hier alle drankjes drinken";
+        }
+        else if ($currentAge <= 17 && $countryName == "Cyprus")
+        {
+                $boozePlz = "Je woont in $countryName en bent $currentAge. Je mag hier alle drankjes drinken";
+        }
+    }
+
+    else if ($currentAge >= 18 && $currentAge > 15)
+    {
+        if($countryName == "België")
+        {
+            $boozePlz = "Je woont in $countryName en bent $currentAge. Je mag hier alle zwakke drankjes drinken";
+        }
+        else if ($countryName == "Zweden" && $currentAge >= 18)
+        {
+            $boozePlz = "Je woont in $countryName en bent $currentAge. Je mag hier alle zwakke drankjes drinken";
+        }
+    }
+    else
+    {
+        $boozePlz = "Je woont in $countryName en bent $currentAge. Je mag hier helaas geen drankjes drinken (of mijn if/else klopt niet)";
+    }
+?>
+
+<p><?php echo $boozePlz ?></p>
 <aside>
     <h2>Menu</h2>
     <ul>
