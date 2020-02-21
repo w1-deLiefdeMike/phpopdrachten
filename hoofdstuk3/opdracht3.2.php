@@ -79,23 +79,25 @@
     $countryName = "";
     $currentAge = 29;
 
-    if($currentAge < 20)
+    if($currentAge > 20)
     {
         $boozePlz = "Je mag hier alle drankjes consumeren";
     }
-    else if($currentAge >= 20 && $currentAge <= 17)
+    elseif($currentAge >= 20 && $currentAge <= 17)
     {
-        if ($currentAge <= 18 && $countryName == ("België" || "Bulgarije" || "Nederland"))
+        if ($currentAge >= 18 && ($countryName == "België" || $countryName == "Bulgarije" || $countryName =="Nederland"))
         {
             $boozePlz = "Je woont in $countryName en bent $currentAge. Je mag hier alle drankjes drinken";
         }
-        else if ($currentAge <= 17 && $countryName == "Cyprus")
+        else if ($currentAge >= 17 && $countryName == "Cyprus")
         {
-                $boozePlz = "Je woont in $countryName en bent $currentAge. Je mag hier alle drankjes drinken";
+            $boozePlz = "Je woont in $countryName en bent $currentAge. Je mag hier alle drankjes drinken";
         }
     }
-
-    else if ($currentAge >= 18 && $currentAge > 15)
+    elseif ($currentAge < 15 ) {
+        $boozePlz = "Ga naar mama toe";
+    }
+    elseif ($currentAge <= 18)
     {
         if($countryName == "België")
         {
@@ -108,7 +110,7 @@
     }
     else
     {
-        $boozePlz = "Je woont in $countryName en bent $currentAge. Je mag hier helaas geen drankjes drinken (of mijn if/else klopt niet)";
+        $boozePlz = "Hier mag ie niet komen";
     }
 ?>
 
