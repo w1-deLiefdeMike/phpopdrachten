@@ -8,20 +8,19 @@
 ?>
 <?php
 // Aanmaken van de variabelen.
-    $text1 = "Elfstedentocht";
-    $text2 = "Alvestêdetocht";
-    $text3 = 200;
-    $text4 = "schaatstocht";
-    $text5 = "natuurijs";
-    $text6 = "Koninklijke Vereniging De Friesche Elf Steden";
-    $text7 = "Leeuwarden";
-    $text8 = "Friesland";
-    $text9 = "Elfstedentocht";
-    $text10 = 15;
-    $text11 = 1909;
-    $text12 = 1;
+    $welkeTocht = "Elfstedentocht";
+    $alternatieveTochtnaam = "Alvestêdetocht";
+    $hoeLang = 200;
+    $watIsDit = "schaatstocht";
+    $opWat = "natuurijs";
+    $georganiseerdDoor = "Koninklijke Vereniging De Friesche Elf Steden";
+    $welkeStad = "Leeuwarden";
+    $welkeRegio = "Friesland";
+    $hoeVaakGereden = 15;
+    $eersteKeerIn = 1909;
+    $hoeVaakPerWinter = 1;
 
-    $verhaal = "De $text1 (Fries: $text2) is een $text3 kilometer lange $text4 over $text5 die wordt georganiseerd door de $text6. $text7, de hoofdstad van $text8, is start- en aankomstplaats. De $text9 is inmiddels $text10 maal verreden en werd voor het eerst in $text11 gereden en wordt maximaal $text12 keer per winter gehouden.";
+    $verhaal = "De $welkeTocht (Fries: $alternatieveTochtnaam) is een $hoeLang kilometer lange $watIsDit over $opWat die wordt georganiseerd door de $georganiseerdDoor. $welkeStad, de hoofdstad van $welkeRegio, is start- en aankomstplaats. De $welkeTocht is inmiddels $hoeVaakGereden maal verreden en werd voor het eerst in $hoeLang gereden en wordt maximaal $hoeVaakPerWinter keer per winter gehouden.";
 ?>
 <!DOCTYPE html>
 <html lang="nl">

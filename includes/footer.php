@@ -1,3 +1,5 @@
 <?php
-    echo "<div class=\"footer\"> MdL Productions </div>"
+    echo  "<div class=\"footer\"> -- $year -- $name -- MdL Productions -- </div>";
+    echo  "</body>
+           </html>";
 ?>
