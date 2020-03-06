@@ -64,11 +64,11 @@
 
     if ($driveOn == true)
     {
-        $result = "U mag doorrijden";
+        echo '<span class="green">U mag doorrijden</span>';
     }
     else
     {
-        $result = "U moet stoppen";
+        echo '<span class="red">U moet stoppen</span>';
     }
 ?>
 <p><?php echo $result ?></p>
@@ -127,7 +127,8 @@
     }
 ?>
 
-<p><?php echo $boozePlz ?></p>
+<p><?php echo $boozePlz ?>
+</p>
 <aside>
     <h2>Menu</h2>
     <ul>
