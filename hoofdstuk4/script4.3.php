@@ -1,5 +1,5 @@
 <?php
-
+    // Hieronder staan de counters die ik gebruik voor de taken daaronder
 $task2 = "Lancering in: ";
 $counter = 19;
 $counter3 = 1;
@@ -11,6 +11,7 @@ $ageCounter2 = 30;
 
 $lifePhase = "";
 
+    // While loop voor taak 2
 while ($counter > 0)
 {
     $task2 = $task2.$counter.",";
@@ -21,6 +22,7 @@ while ($counter > 0)
     }
 }
 
+    // Code voor taak 3
 $task3 = "Lancering in: ";
 
 for ($counter2 = 19; $counter2 > 0; $counter2--)
@@ -32,6 +34,7 @@ for ($counter2 = 19; $counter2 > 0; $counter2--)
     }
 }
 
+    // Code voor taak 4
 $task4 = "";
 
 while ($counter3 < 7)
@@ -40,6 +43,7 @@ while ($counter3 < 7)
     $counter3++;
 }
 
+    // Code voor taak 5
 $task5 = "";
 
 for ($counter4 = 1; $counter4 < 10; $counter4++)
@@ -55,6 +59,7 @@ for ($counter4 = 1; $counter4 < 10; $counter4++)
     }
 }
 
+    // Code voor taak 6
 $task6 = "";
 
 while ($counter5 > 1989)
@@ -76,6 +81,7 @@ while ($counter5 > 1989)
 
 }
 
+    // Code voor taak 7
 $task7 = "";
 
 while ($counter6 > 1989) {

@@ -1,6 +1,7 @@
 <?php
 include '../includes/header.php';
 include 'script4.3.php';
+    // Hieronder echo ik de verschillende variabelen die ik heb gemaakt voor de verschillende taken
 ?>
     <aside>
         <?php
