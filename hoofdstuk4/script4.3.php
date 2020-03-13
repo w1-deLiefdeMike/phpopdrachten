@@ -57,7 +57,7 @@ for ($counter4 = 1; $counter4 < 10; $counter4++)
 
 $task6 = "";
 
-while ($counter5 > 1990)
+while ($counter5 > 1989)
 {
 
     if ($ageCounter == 30)
@@ -78,48 +78,40 @@ while ($counter5 > 1990)
 
 $task7 = "";
 
-while ($counter6 > 1990)
-{
-    if ($ageCounter2 == 30)
-    {
-        $task7 = $task7 . "<p>In " . $counter6 . " word ik " . $ageCounter2 . " jaar oud. </p>";
-        $counter6--;
-        $ageCounter2--;
-    }
-}
-    switch ($lifePhase)
-    {
-        case $ageCounter2 == 20:
-            $lifePhase = "volwassen";
+while ($counter6 > 1989) {
+    switch ($ageCounter2) {
+        case 30:
+            $task7 = $task7 . "<p>In " . $counter6 . " word ik " . $ageCounter2 . " jaar oud. </p>";
             break;
-        case $ageCounter2 == 18:
-            $lifePhase = "adolescent";
+        case 20:
+            $task7 = $task7 . "<p>In " . $counter6 . " was ik " . $ageCounter2 . " jaar oud en werd ik een volwassene. </p>";
             break;
-        case $ageCounter2 == 12:
-            $lifePhase = "puber";
+        case 18:
+            $task7 = $task7 . "<p>In " . $counter6 . " was ik " . $ageCounter2 . " jaar oud en werd ik een adolescent. </p>";
             break;
-        case $ageCounter2 == 8:
-            $lifePhase = "tiener";
+        case 12:
+            $task7 = $task7 . "<p>In " . $counter6 . " was ik " . $ageCounter2 . " jaar oud en werd ik een puber. </p>";
             break;
-        case $ageCounter2 == 4:
-            $lifePhase = "kleuter";
+        case 8:
+            $task7 = $task7 . "<p>In " . $counter6 . " was ik " . $ageCounter2 . " jaar oud en werd ik een tiener. </p>";
             break;
-        case $ageCounter2 == 2:
-            $lifePhase = "peuter";
+        case 4:
+            $task7 = $task7 . "<p>In " . $counter6 . " was ik " . $ageCounter2 . " jaar oud en werd ik een kleuter. </p>";
             break;
-        case $ageCounter2 == 0:
-            $lifePhase = "baby";
+        case 2:
+            $task7 = $task7 . "<p>In " . $counter6 . " was ik " . $ageCounter2 . " jaar oud en werd ik een peuter. </p>";
+            break;
+        case 0:
+            $task7 = $task7 . "<p>In " . $counter6 . " ben ik geboren, en was ik natuurlijk " . $ageCounter2 . " jaar oud en was ik een baby. </p>";
+            break;
+        default:
+            $task7 = $task7 . "<p>In " . $counter6 . " was ik " . $ageCounter2 . " jaar oud. </p>";
             break;
     }
-    if ($lifePhase == "baby")
-    {
-        $task7 = $task7."<p>In ".$counter6." ben ik geboren en was ik een ".$lifePhase."</p>";
-        // return ?
-    }
-    $task7 = $task7."<p>In ".$counter6." was ik ".$ageCounter2." jaar oud en werd ik een ".$lifePhase." </p>";
     $counter6--;
     $ageCounter2--;
+}
 
-    // Chrome preview werkt niet mee && via Edge lijkt er ergens een infinite loop te zitten
+
 
 

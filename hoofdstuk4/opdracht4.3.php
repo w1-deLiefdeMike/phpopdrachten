@@ -22,6 +22,10 @@ include 'script4.3.php';
         <?php
             echo $task6;
         ?>
+        <br> <br>
+        <?php
+            echo $task7;
+        ?>
 
     </aside>
 <br>
