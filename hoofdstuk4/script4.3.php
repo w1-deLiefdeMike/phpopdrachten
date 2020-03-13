@@ -120,4 +120,6 @@ while ($counter6 > 1990)
     $counter6--;
     $ageCounter2--;
 
+    // Chrome preview werkt niet mee && via Edge lijkt er ergens een infinite loop te zitten
+
 
