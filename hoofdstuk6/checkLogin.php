@@ -1,14 +1,24 @@
 <?php
-if ($_POST['username'] == 'Mike' && $_POST['password'] == 'onbekend')
-{
-    session_start();
-    $_SESSION['username'] = $_POST['username'];
-    header("location: welkom.php");
-}
-else
-{
-    $message = "Ongeldige username/wachtwoord {$_POST['username']}, probeer het nog eens.";
+$authUsers = array
+(
+    "Mike" => "onbekend",
+    "Abu" => "bekend",
+    "Nordin" => "onbekend",
+    "BasZ" => "654321",
+    "Rosalie" => "bloemblaadjes"
+);
 
-    include "opdracht6.1.php";
-    // aanpassing
+foreach ($authUsers as $user => $password)
+{
+    if ($_POST['username'] == $user && $_POST['password'] == $password) {
+        session_start();
+        $_SESSION['username'] = $_POST['username'];
+        header("location: welkom.php");
+    }
+    else
+    {
+        $message = "Ongeldige username/wachtwoord {$_POST['username']}, probeer het nog eens.";
+        include "opdracht6.1.php";
+        // aanpassing
+    }
 }

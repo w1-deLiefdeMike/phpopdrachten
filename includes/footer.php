@@ -13,5 +13,5 @@ else
 {
     $bezoeker = "onbekende bezoeker". "&nbsp;<a href='../hoofdstuk6/opdracht6.1.php'>Login</a>";
 }
-print $bezoeker;
+echo $bezoeker;
 ?>
