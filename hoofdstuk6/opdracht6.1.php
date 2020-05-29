@@ -1,5 +1,5 @@
 <?php
-include "../Includes/Header.php";
+include "../includes/header.php";
 ?>
 <form action="checkLogin.php" method="post">
     <label>Username: </label>
@@ -16,5 +16,5 @@ include "../Includes/Header.php";
 </form>
 <br>
 <?php
-include "../Includes/Footer.php";
+include "../includes/footer.php";
 ?>
