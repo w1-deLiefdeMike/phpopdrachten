@@ -10,4 +10,5 @@ else
     $message = "Ongeldige username/wachtwoord {$_POST['username']}, probeer het nog eens.";
 
     include "opdracht6.1.php";
+    // aanpassing
 }
