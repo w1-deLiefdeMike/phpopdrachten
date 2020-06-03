@@ -6,7 +6,8 @@
  * Time: 12:00
  * File: index.php
  */
-
+?>
+<?php
 echo "<!DOCTYPE html>
 <html lang='nl'>
 <head>
@@ -17,6 +18,5 @@ echo "<!DOCTYPE html>
     <meta charset='utf-8'>
     <link href='../CSS/style.css' type='text/css' rel='stylesheet'>
 </head>
-<body>
-";
-
+<body>";
+?>

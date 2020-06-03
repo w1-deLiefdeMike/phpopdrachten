@@ -7,11 +7,10 @@ $authUsers = array
     "BasZ" => "654321",
     "Rosalie" => "bloemblaadjes"
 );
-
 foreach ($authUsers as $user => $password)
 {
-    if ($_POST['username'] == $user && $_POST['password'] == $password) {
-        session_start();
+    if ($_POST['username'] == $user && $_POST['password'] == $password)
+    {
         $_SESSION['username'] = $_POST['username'];
         header("location: welkom.php");
     }
@@ -19,6 +18,5 @@ foreach ($authUsers as $user => $password)
     {
         $message = "Ongeldige username/wachtwoord {$_POST['username']}, probeer het nog eens.";
         include "opdracht6.1.php";
-        // aanpassing
     }
 }
